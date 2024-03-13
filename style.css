@@ -1,0 +1,484 @@
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Cabin&family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&family=Inconsolata:wght@600&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@1&family=Mukta:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@1,400;1,500&family=Source+Code+Pro:ital@1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Cabin&family=DM+Sans:opsz,wght@9..40,300&family=DM+Serif+Display&family=Inconsolata:wght@600&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@1&family=Mukta:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@1,400;1,500&family=Source+Code+Pro:ital@1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Cabin&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&family=Inconsolata:wght@600&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@1&family=Mukta:wght@500&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@1,400;1,500&family=Source+Code+Pro:ital@1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Cabin&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display&family=Inconsolata:wght@600&family=Inter:wght@100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merriweather:ital@1&family=Mukta:wght@500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@1,400;1,500&family=Source+Code+Pro:ital@1&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --primary-cl: hsl(223, 86%, 51%);
+  --secondry-cl: hsl(207, 68%, 64%);
+  --btn-cl: hsl(170, 68%, 49%);
+  --btn-fn: "DM Sans", sans-serif;
+  --sec-tile: "Noto Sans", sans-serif;
+  --brand: "Poppins", sans-serif;
+  --bg-cl: hsl(210, 100%, 20%);
+}
+.hero-bg {
+  /* background-image: url(img/hero-bg.jpg); */
+  background-color: var(--primary-cl);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 45rem;
+}
+/* .hero-bg::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.80);
+} */
+.navbar {
+  z-index: 5;
+  padding-top: 20px;
+}
+
+.navbar-brand {
+  font-family: var(--brand);
+  color: #01ffd5;
+  /* font-size: 1.5rem; */
+}
+.navbar-brand:hover {
+  color: white;
+}
+ul li {
+  padding-left: 20px;
+}
+ul li .nav-link {
+  font-family: var(--sec-tile);
+  color: white;
+}
+ul li .nav-link:hover {
+  color: #28d0b5;
+  font-weight: bold;
+}
+.hero-content {
+  display: flex;
+  position: relative;
+  z-index: 1;
+}
+.hero-content .container .row {
+  padding-top: 10rem;
+  display: flex;
+}
+
+.text-content h1 {
+  font: 72px/90px var(--brand);
+  /* font-family: var(--brand); */
+}
+/* .text-content h3{
+    font-size: x-large;
+    font-weight: 700;
+    font-family: var(--sec-tile);
+    letter-spacing: 5px;
+} */
+.text-content p {
+  padding-top: 20px;
+  font-weight: 600;
+  font-size: 1rem;
+  font-family: var(--sec-tile);
+}
+.text-kid {
+  color: #01ffd5;
+}
+
+.btn {
+  background-color: transparent;
+  font-family: var(--sec-tile);
+  border: 1px #28d0b5 solid;
+  color: white;
+  height: 3rem;
+  border: 2px #28d0b5 solid;
+}
+.btn:hover {
+  background-color: var(--btn-cl);
+  /* color: white; */
+}
+
+/* services  */
+
+.service-section {
+  background: linear-gradient(#ffff, #9198e5);
+
+  padding-block-end: 40px;
+}
+.container .services-heading {
+  padding-top: 50px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.container .services-heading h2 {
+  font-size: 3rem;
+  font-family: var(--sec-tile);
+  font-weight: 700;
+}
+.kid {
+  background: linear-gradient(90deg, #f81 0%, #ed27ff 47%, #7f50fb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.container .row .services-para {
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+  font-family: var(--btn-fn);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 20px;
+  color: rgb(118, 115, 115);
+}
+
+/* card  */
+
+.container .row .card {
+  margin-top: 50px;
+  max-width: 100%;
+  padding-block-end: 10px;
+  border-radius: 3%;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+  border: none;
+}
+.container .row .card:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.container .row .card-img img {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.card .card-body h4 {
+  padding-top: 15px;
+  font-family: var(--sec-tile);
+  font-weight: 800;
+}
+.card .card-body p {
+  padding-top: 10px;
+  font-family: var(--sec-tile);
+  max-width: 90%;
+}
+
+/* button  */
+.row ul li {
+  padding-left: 30px;
+}
+.row .talk-btn {
+  margin-top: 50px;
+}
+.row .talk-btn .view {
+  background-color: #28d0b5;
+  color: white;
+  font-family: var(--btn-fn);
+}
+.row .talk-btn .talk {
+  font-family: var(--btn-fn);
+}
+.row .talk-btn .view:hover {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+.row .talk-btn .talk:hover {
+  color: white;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.line {
+  background-color: transparent;
+  padding: 0;
+  margin: 0;
+
+  color: black;
+}
+
+/* recent work  */
+
+.recent-work {
+  background: linear-gradient(#9198e5, #e66465);
+  padding-block-end: 40px;
+}
+.recent-work .container {
+  /* padding-top: 100px; */
+}
+.recent-work .work-title h2 {
+  font-size: 3rem;
+  font-family: var(--sec-tile);
+  font-weight: 700;
+  /* font-family: var(--sec-tile);
+    font-size: 2.5rem ;
+    font-weight: 700; */
+}
+.recent-work .work-para {
+  max-width: 40%;
+  padding-top: 20px;
+}
+.recent-work .work-para p {
+  font-family: var(--sec-tile);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.work-img-container {
+  max-width: 90%;
+  padding-top: 50px;
+}
+.work-img-container img {
+  border-radius: 3%;
+}
+
+/* our services */
+
+.container .services-heading h2 {
+  font-size: 3rem;
+  font-family: var(--sec-tile);
+  font-weight: 700;
+}
+.container .row .services-para {
+  max-width: 75%;
+  text-align: center;
+  margin: auto;
+  font-family: var(--btn-fn);
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-top: 20px;
+  color: rgb(118, 115, 115);
+}
+.businesscard {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+.businesssinglecard {
+}
+.businessimg {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+  border-radius: 10px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+}
+.businessimg img {
+  vertical-align: middle;
+}
+.businesstitle {
+  font-family: var(--sec-tile);
+  font-size: 1.3rem;
+  text-align: center;
+  padding-top: 20px;
+  font-weight: 700;
+}
+.businesssinglecard {
+  padding-top: 50px;
+}
+
+/* contact us  */
+.container .ContactText h2 {
+  padding-top: 50px;
+  font-size: 3rem;
+  font-family: var(--sec-tile);
+  font-weight: 700;
+}
+.container .ContactText h3 {
+  font-family: var(--btn-fn);
+  letter-spacing: 2px;
+}
+.container .ContactContainer p {
+  font-family: var(--sec-tile);
+}
+
+.ContactContainer {
+  background-color: aliceblue;
+  width: 55%;
+  padding-block-start: 50px;
+  padding-inline-start: 50px;
+  padding-inline-end: 50px;
+  padding-block-end: 20px;
+  border-radius: 5%;
+}
+.ContactContainer h3 {
+  font-family: var(--btn-fn);
+  font-size: 2rem;
+  font-family: 900;
+}
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+#submit {
+  width: 100%;
+  color: black;
+  align-items: center;
+  border: 1px rgb(66, 212, 8) solid;
+}
+#submit:hover {
+  background-color: var(--btn-cl);
+  color: white;
+}
+.CompanyCantact {
+  background-color: var(--primary-cl);
+}
+label {
+  font-family: var(--btn-fn);
+}
+input {
+  font-family: var(--btn-fn);
+}
+
+.CompanyContact {
+  background-color: var(--primary-cl);
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: auto;
+  padding-inline-start: 150px;
+  padding-inline-end: 150px;
+  border-radius: 7%;
+}
+.profile {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+.profile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ProfileContent h3 {
+  font-family: var(--sec-tile);
+  padding-top: 20px;
+  font-weight: 700;
+}
+.ProfileContent h6 {
+  font-family: var(--btn-fn);
+  font-weight: 700;
+  font-size: larger;
+}
+.ProfileContent p {
+  font-family: var(--btn-fn);
+  font-weight: 700;
+}
+.btn-lg {
+  width: 100%;
+}
+
+/* footer */
+
+.footer-section {
+  background-color: black;
+  width: 100%;
+  margin-top: 100px;
+  padding-block-start: 50px;
+  padding-block-end: 50px;
+}
+
+.FooteDescribe h3 {
+  font-family: var(--sec-tile);
+}
+.FooteDescribe p {
+  font-family: var(--btn-fn);
+}
+.FooteDescribe ul li {
+  list-style-type: none;
+  padding-top: 5px;
+}
+.FooteDescribe ul li:hover {
+  font-weight: 700;
+}
+.FooterSubHeading {
+  font-family: var(--sec-tile);
+  font-size: x-large;
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  .d-sm-none {
+    display: none;
+  }
+  .hero-bg {
+    /* background-image: url(img/hero-bg.jpg); */
+
+    height: 30rem;
+  }
+  .hero-content .container .row {
+    padding-top: 5rem;
+  }
+  .text-content h1 {
+    font: 30px/40px var(--brand);
+    /* font-family: var(--brand); */
+  }
+  .container .services-heading {
+    max-width: 90%;
+  }
+  .container .services-heading h2 {
+    font-size: 3rem;
+    font-family: var(--sec-tile);
+    font-weight: 700;
+  }
+  .recent-work .work-para {
+    max-width: 90%;
+    padding-top: 20px;
+  }
+  .businesscard {
+    padding: 1rem;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .container .row .services-para {
+    max-width: 100%;
+    font-weight: 400;
+  }
+  .container .row .card {
+    margin-top: 50px;
+    max-width: 100%;
+    padding-block-end: 10px;
+    border-radius: 3%;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.5);
+    border: none;
+  }
+  .businesscard {
+    grid-template-columns: 1fr 1fr;
+  }
+  .ContactContainer {
+    width: 100%;
+  }
+  .Contact_TextContainer {
+    position: relative;
+  }
+  .CompanyContact {
+    display: none;
+  }
+}
+
+@media (max-width: 476px) {
+  .FooteDescribe ul {
+    position: relative;
+    left: 0;
+  }
+  .row .talk-btn .view {
+    width: 100%;
+    height: 100%;
+  }
+  .row .talk-btn .talk {
+    width: 100%;
+    height: 100%;
+  }
+}
